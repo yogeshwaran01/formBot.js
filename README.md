@@ -6,6 +6,9 @@ If form is submited, all form data are send to you as telegram Message
 
 ## Simple Usage
 
+```html
+<script src="https://cdn.jsdelivr.net/gh/yogeshwaran01/formBot.js@1.0.0/formBot.min.js" ></script>
+```
 In `index.html`
 
 - Name the id of your form as `formBot`
@@ -44,7 +47,7 @@ The full html is
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <script src="formBot.js" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/yogeshwaran01/formBot.js@1.0.0/formBot.min.js" ></script>
 </head>
 <body>
     <form id="formBot" names="name mail message" chatId="your_chat_id">
