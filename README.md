@@ -74,5 +74,5 @@ That it, The form is now working
 
 ## Contributions are welcome
 
-- Report any bugs in issues
-- Please create pull request if fix any bugs are added new fetures
+- Report any bugs in issues section
+- Create pull request if you fix any bugs or added new fetures
