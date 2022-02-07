@@ -1,0 +1,14 @@
+{
+  "name": "formbot",
+  "version": "1.0.0",
+  "description": "HTML form to telegram Message",
+  "main": "formBot.js",
+  "keywords": [
+    "telegram",
+    "form",
+    "bot",
+    "contact"
+  ],
+  "author": "",
+  "license": "MIT"
+}
