@@ -1,6 +1,9 @@
-let sendMessage = (event, formId = "formBot", chatId = null) => {
-    const form = document.getElementById(formId)
-    let chatid = chatId || form.getAttribute('chatId')
+let sendMessage = (event, options = {}) => {
+
+    let formid = options.formId || "formBot"
+    const form = document.getElementById(formid)
+    let chatid = options.chatId || form.getAttribute('chatId')
+
     let data = {
         data: [],
         timestamp: new Date(event.timeStamp),
