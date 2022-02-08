@@ -4,10 +4,14 @@ Make your form to work
 
 If form is submited, all form data are send to you as telegram Message
 
+## Qucik Demo
+
+[Click here](https://yogeshwaran01.github.io/formBot.js/) for quick demo
+
 ## Simple Usage
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/yogeshwaran01/formBot.js@1.0.0/formBot.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/gh/yogeshwaran01/formBot.js@1.2.0/formBot.min.js" ></script>
 ```
 
 In `index.html`
