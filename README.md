@@ -9,6 +9,7 @@ If form is submited, all form data are send to you as telegram Message
 ```html
 <script src="https://cdn.jsdelivr.net/gh/yogeshwaran01/formBot.js@1.0.0/formBot.min.js" ></script>
 ```
+
 In `index.html`
 
 - Name the id of your form as `formBot`
@@ -71,6 +72,35 @@ The full html is
 ```
 
 That it, The form is now working
+
+## More Options
+
+### Changing default formId
+
+By default, it targets form with id `formBot`, you can change it with your own id
+
+```js
+document.getElementById('your_own_id').onsubmit = (e) =>{
+    sendMessage(e, {'formId': 'your_own_id'})
+}
+```
+
+### Mentioning ChatId
+
+chatId of your telegram can be mention in html or js
+
+```html
+<form id="formBot" names="name mail message" chatId="your_chat_id">
+```
+
+or
+
+```js
+document.getElementById('your_own_id').onsubmit = (e) =>{
+    sendMessage(e, {'chatId': 'your_chat_id'})
+}
+
+```
 
 ## Contributions are welcome
 
