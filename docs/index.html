@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formBot.js</title>
+    <script src="../formBot.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/water.css@2/out/water.css'>
+    <style>
+        .jk {
+            border: 2px black solid;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>formBot.js</h1>
+    <hr>
+    <p>Make your form to work</p>
+    <p>If form is submited, all form data are send to you as telegram Message</p>
+    <h2>Quick Demo</h2>
+    <hr>
+    <div>
+        <p>Get your Telegram chat id from this <a href="https://t.me/chatIDrobot">bot</a> or some other bots in Telegram</p>
+        <label for="cid">Enter your Telegram Chat Id</label>
+        <input type="text" name="cid" id="cid">
+        <span hidden id="di" style="color: red;">Enter your chat ID</span>
+    </div>
+    <br>
+    <form id="formBots" names="name message" class="jk">
+        <label for="name">Name</label>
+        <input type="text" name="name">
+        <label for="message">Message</label>
+        <input type="text" name="message">
+        <input type="submit">
+    </form>
+
+    <h2>Usage</h2>
+    <p><a href="https://github.com/yogeshwaran01/formBot.js">Github</a></p>
+
+    <script>
+        document.getElementById('formBots').onsubmit = (e) => {
+            let cid = document.getElementById('cid').value
+            if (cid == '') {
+                document.getElementById('di').style.display = "block"
+                e.preventDefault()
+            } else {
+                e.preventDefault()
+                sendMessage(e, {
+                    'formId': 'formBots',
+                    'chatId': cid
+                })
+            }
+        }
+    </script>
+</body>
+
+</html>
